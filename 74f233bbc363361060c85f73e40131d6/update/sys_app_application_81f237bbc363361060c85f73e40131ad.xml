@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
     <sys_app_application action="INSERT_OR_UPDATE">
         <active>true</active>
-        <category/>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
         <description/>
         <device_type>browser</device_type>
         <hint/>
@@ -14,7 +14,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>81f237bbc363361060c85f73e40131ad</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>EDX</sys_name>
         <sys_overrides/>
         <sys_package display_value="EDX" source="x_1935344_edx">74f233bbc363361060c85f73e40131d6</sys_package>
@@ -22,7 +22,7 @@
         <sys_scope display_value="EDX">74f233bbc363361060c85f73e40131d6</sys_scope>
         <sys_update_name>sys_app_application_81f237bbc363361060c85f73e40131ad</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-18 01:59:35</sys_updated_on>
+        <sys_updated_on>2026-03-18 02:32:01</sys_updated_on>
         <title>EDX</title>
         <view_name/>
     </sys_app_application>
