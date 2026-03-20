@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_1935344_edx_certificate</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p>Nome: ${employee_name}</p>
+<p>Date absence: ${date_absence}</p>
+<p>Description: ${description}</p>
+<p>Attachment: ${attachment}</p>]]></message_html>
+        <message_list/>
+        <message_text><![CDATA[Nome: ${employee_name}
+
+Date absence: ${date_absence}
+
+Description: ${description}
+
+Attachment: ${attachment}]]></message_text>
+        <name>Employee Sent Certificate</name>
+        <sms_alternate><![CDATA[Nome: ${employee_name}
+
+Date absence: ${date_absence}
+
+Description: ${description}
+
+Attachment: ${attachment}]]></sms_alternate>
+        <subject>Employee Sent Certificate</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-20 15:27:04</sys_created_on>
+        <sys_id>601e3074c337321060c85f73e401316b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Employee Sent Certificate</sys_name>
+        <sys_package display_value="EDX" source="x_1935344_edx">74f233bbc363361060c85f73e40131d6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EDX">74f233bbc363361060c85f73e40131d6</sys_scope>
+        <sys_update_name>sysevent_email_template_601e3074c337321060c85f73e401316b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:27:04</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

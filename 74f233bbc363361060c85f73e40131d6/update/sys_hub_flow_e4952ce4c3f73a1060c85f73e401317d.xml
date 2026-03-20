@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Flow that create schedule date birth of the employee</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>create_schedule_date_birth</internal_name>
+        <label_cache>null</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Create Schedule Date Birth</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:57:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e4952ce4c3f73a1060c85f73e401317d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Create Schedule Date Birth</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EDX" source="x_1935344_edx">74f233bbc363361060c85f73e40131d6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EDX">74f233bbc363361060c85f73e40131d6</sys_scope>
+        <sys_update_name>sys_hub_flow_e4952ce4c3f73a1060c85f73e401317d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:58:46</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>bdc5e828c3f73a1060c85f73e4013101</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e4952ce4c3f73a1060c85f73e401317d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e4952ce4c3f73a1060c85f73e401317d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e4952ce4c3f73a1060c85f73e401317d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e4952ce4c3f73a1060c85f73e401317d^sys_idNOT IN6495a028c3f73a1060c85f73e40131c6"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e4952ce4c3f73a1060c85f73e401317d</id>
+        <name>Create Schedule Date Birth</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:57:43</sys_created_on>
+        <sys_id>6495a028c3f73a1060c85f73e40131c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:57:43</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=6495a028c3f73a1060c85f73e40131c6"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e4952ce4c3f73a1060c85f73e401317d^sys_idNOT IN6a952428c3f73a1060c85f73e40131bf,92952428c3f73a1060c85f73e4013128"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create Schedule Date Birth">e4952ce4c3f73a1060c85f73e401317d</model>
+        <model_id>e4952ce4c3f73a1060c85f73e401317d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e4952ce4c3f73a1060c85f73e401317d</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:57:50</sys_created_on>
+        <sys_id>6a952428c3f73a1060c85f73e40131bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EDX">74f233bbc363361060c85f73e40131d6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:57:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6a952428c3f73a1060c85f73e40131bf"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create Schedule Date Birth">e4952ce4c3f73a1060c85f73e401317d</model>
+        <model_id>e4952ce4c3f73a1060c85f73e401317d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e4952ce4c3f73a1060c85f73e401317d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:57:49</sys_created_on>
+        <sys_id>92952428c3f73a1060c85f73e4013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EDX">74f233bbc363361060c85f73e40131d6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:57:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=92952428c3f73a1060c85f73e4013128"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e4952ce4c3f73a1060c85f73e401317d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e4952ce4c3f73a1060c85f73e401317d"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e4952ce4c3f73a1060c85f73e401317d^sys_idNOT IN1e95a028c3f73a1060c85f73e40131e7"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Schedule Date Birth">e4952ce4c3f73a1060c85f73e401317d</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:57:49</sys_created_on>
+        <sys_id>1e95a028c3f73a1060c85f73e40131e7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:58:02</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/91Z227jNhD9FUFPLeACuthxnLet7UUDpAlqe9uHIBUokXSIpUlXopR4g/x7SV0sWaIdX+RFkifDpMg5czhzZijdv5gU+IiaV+aQM0gE4czsmIQJFDJAZ6slklNBMRXJuQVgEAgerswrDGiEOiYO+WKGFksKBFoP8hCi0LyyLatjJoDGaLqKrqHcTG7BwGJjWzN/RI79O/5L/oMkkrut/t4YDB4JhSFi5tX9Q8dcglDuIpSNlzXeG8K+ZyY2HybK8MUFABABK3Bt13Esy7ns2v6F69sOdAHysVyl40IDVmhoUWM39eVqokoEehaIQQTXLDXJDBGAd4yWA4/SucynBXiOyA9puWupzUKEkfQwQNns+q+Xs5cN4xEQYCrCOBBxiApyOAlQlHEDEQYxFcPqWPbA3TL1N10igE+L1ZzGC3ab0WKuNygOS47EkQSBlspVhV0aV1EyfeRPkwLkV8JSWnInKQ8AXf8DQoTEj4WC82I+ASYiT3APQOhVOL8y1caKFw4RHZX25DiZz1HoEbaMRWS+dsxoFQ0piKIStaTL+y9WRjMf8tVe6nDmrVoXhGQpvgSCJEVov3bKnAljJhd462NtZk5K5JryGxJJfPcvJi7Yyl3ARehMYmZwZgRxKGkShgwPo9jdSFGpkMLXCzDP/cBTRFEgKjGFv0XVf3+SKCJsXkG/Np6ONK3TVRVCxsVpRh/alI0m6UnNn5p8tKAdto2xj7Bj9ZVy2JbrY9vqWz2AoWtZgVPRjia8rbhFLUg2NKQYPIt+tKMeZSLsCpz66eQOWdVE2ivsk82cKYh51YnYSdDslqA5r00tdQ8S03VEZ8OjzcDe5VpNg4ucO1aEAUyAXAELHw/X1D3lFFP+JIX7CCnFPETzkMcM1iVN7WkQ+bvxREsi6oPg+26z5RPGL/lB/vreBLWkvQhlwFZnkVIX2/4AdZElFdSV4un3BgM/AA7G/Ys+cuyalJbAtGg/l4S+ETGJLuS2yak26BNdrhwgpCcAbIjqwQBPl9M8prVims19VNl8ekTMk+BDjyphbKjnnBKIirl2paNhOinFon35wJeDoGf3+0Ff3uCkfOAu8oHddXpg0L9wL3s1+WiA2wVcaLiqCspNNvRTbnQyTFJsW4TlWzb1Dm53HytFIiSEqqOHtxfp8yAzUCn06mSNVM54aKhTMa7LB40pkmU7fWfQWrvBxWOj0ZCmf5fjG6ZVo3rL2W8aOG3eIZm80uxDzRYo760PqgVJssn6GS6WqHvZG2BXL2d4oJOzEt524J+nL9ozipKt8ahrkPbN2kSb/Fs7miPysBZh1VZnRy/WFil266Q45yPFPbn/K9J46236GLAfuh6m7c/xRZEz5HGsFX2Cjfw9LIKGvzLEI5L0Utn0S1OGsttmGcq690ZVlMNG3kW1V/AUzXW3R9yQE0b4Uxw/T9WrhcK53wMg2Ae9nrulkR/U3wPoIL7hweepgQdHV6IL1p2F8LB963tqS2El+TaDac8i16rX+kp3mtfaWveW16dXsV1vMTQoPmJ9muVvsWv1KOXIS9N+IznzL4y7FHCr/tW/BTx79sDtud2uh+Czp7bjK6T5qjQuZ06VwgAHYOCgLV+mLasihQUxNfBCw09V7tJlxm02UVKyS/AyTvfRu8uP9DH61PDHhMoT9TKmIx6HqcuT8fBuMvL++TIb/jGeeJPxdDa5Hs7GoyPTI2ftK0FUBUh+orqkefgfZyCnf8MhAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e4952ce4c3f73a1060c85f73e401317d^sys_idNOT IN6dc5ace0c3f73a1060c85f73e4013194"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Create Schedule Date Birth">e4952ce4c3f73a1060c85f73e401317d</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:58:36</sys_created_on>
+        <sys_id>6dc5ace0c3f73a1060c85f73e4013194</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="EDX">74f233bbc363361060c85f73e40131d6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:58:36</sys_updated_on>
+        <ui_id>9b8638b6-c64e-4bac-9af6-5b9c1cee9e34</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VSTU/jMBD9K8jnKEoatoLeVqCeWJAW1AtC0SSetJYcJ2s7hWzFf9/xR9IKgdgDF3LyPM+M33t5jwcmOFuxJcfs8jJf1kVeFIssW1yc59WyqPIFLwDziiVMQYvUuQc5oKHaHwigIxemlzBujki9E5JrVGz1+JSwHjQNW9RsdXhz9b+vS6hQUutaoOTmHTp27F1tsSUqFstAL+A3cfghXp5t4mWnuSOVJwxfLCqOxKYBaTBhLSgOttMjW1k9EKAR+J2S49yxE8oGtS28GPGXns+Xmf9cd4Mkso5+zGUZvQpwcw0W7ml/bQc9W9eJmiR5ezg2MEh7dYqFhrveik6FEQuVnKY7ObTqNpjD5gUnv2YwRAJ7p9bxD+Ka+133/HsiuRbK+xKFyq4GOVdgrRbVYB2dA0OJLe0pW+h7obZlr7u98MNEpU23koq0kd0zvWnEVqVQO94peQvpmvBrD29ACyfiF62h4deEmdFcSTDmKIU8LP8MjkkQFiWU3gVvQelD4YZrLXr7k57aYyT+mkxRzzH78WHY8PyYrZOdXxv3zxlMcX/wf/Z9RlPi32I3p7Nnt+EiJj37qqRffKeMRxnfPuQfRfvpHyT5GYTHBQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6dc5ace0c3f73a1060c85f73e4013194"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e4952ce4c3f73a1060c85f73e401317d"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e4952ce4c3f73a1060c85f73e401317d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e4952ce4c3f73a1060c85f73e401317d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e4952ce4c3f73a1060c85f73e401317d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e4952ce4c3f73a1060c85f73e401317d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:57:50</sys_created_on>
+        <sys_id>26952428c3f73a1060c85f73e40131c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="EDX" source="x_1935344_edx">74f233bbc363361060c85f73e40131d6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EDX">74f233bbc363361060c85f73e40131d6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:57:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e4952ce4c3f73a1060c85f73e401317d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:57:50</sys_created_on>
+        <sys_id>62952428c3f73a1060c85f73e40131bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="EDX" source="x_1935344_edx">74f233bbc363361060c85f73e40131d6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EDX">74f233bbc363361060c85f73e40131d6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:57:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e4952ce4c3f73a1060c85f73e401317d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e4952ce4c3f73a1060c85f73e401317d"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e4952ce4c3f73a1060c85f73e401317d"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e4952ce4c3f73a1060c85f73e401317d"/>
+</record_update>
