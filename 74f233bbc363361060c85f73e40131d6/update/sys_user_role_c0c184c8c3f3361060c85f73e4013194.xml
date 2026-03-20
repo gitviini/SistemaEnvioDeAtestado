@@ -4,7 +4,7 @@
         <can_delegate>true</can_delegate>
         <description>EDX Default admin role</description>
         <elevated_privilege>true</elevated_privilege>
-        <federated_id/>
+        <federated_id>0G63fExwA8jN96ZTmoJhYM0vxKWTj99u5k3otPatdpg=</federated_id>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_1935344_edx.admin</name>

@@ -4,7 +4,7 @@
         <can_delegate>true</can_delegate>
         <description>EDX Employees role</description>
         <elevated_privilege>false</elevated_privilege>
-        <federated_id/>
+        <federated_id>nePh3TKN4pWcNYiO86BD/2s1xUk/XTmjU/4r9czrI/Q=</federated_id>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_1935344_edx.employee</name>

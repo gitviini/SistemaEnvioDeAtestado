@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4c2bf73fc3a3361060c85f73e401310a" extends="sys_user" label="Supervisor" max_length="40" name="x_1935344_edx_supervisor" type="collection"/>
+</database>

@@ -4,7 +4,7 @@
         <can_delegate>true</can_delegate>
         <description>EDX Supervisor role</description>
         <elevated_privilege>false</elevated_privilege>
-        <federated_id/>
+        <federated_id>Ons72Ol6Lg2JrFgo1hrQiDx0ChO7f985iog4/0fyUFg=</federated_id>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_1935344_edx.supervisor</name>

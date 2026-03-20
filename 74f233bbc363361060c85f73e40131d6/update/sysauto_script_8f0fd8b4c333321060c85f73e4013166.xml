@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_run_end/>
+        <entered_run_start/>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <max_drift/>
+        <name>Update Age of Employee</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <repeat_every/>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_daysofweek/>
+        <run_end/>
+        <run_month>1</run_month>
+        <run_period/>
+        <run_start/>
+        <run_time>1970-01-01 00:00:00</run_time>
+        <run_type>daily</run_type>
+        <run_weekinmonth>1</run_weekinmonth>
+        <script><![CDATA[// --- CONSTs ---
+const TABLE = 'x_1935344_edx_employee';
+// DOB = Date of Birth
+const DOB_FIELD = 'date_birth';
+const AGE_FIELD = 'age';
+
+// --- MAIN LOGIC ---
+// get current Date, month and day
+var currentDate = new GlideDate();
+
+var currentMonth = currentDate.getByFormat("MM");
+var currentDay = currentDate.getByFormat("dd");
+
+var gr = new GlideRecord(TABLE);
+
+// only user with active=true and NOT NULL date_birth field
+gr.addNotNullQuery(DOB_FIELD);
+gr.addQuery("active", true);
+
+gr.query();
+
+while (gr.next()) {
+
+    var dobStr = gr.getValue(DOB_FIELD);
+
+    // check if is birth date
+    var birthDate = new GlideDate();
+    birthDate.setValue(dobStr);
+
+    var monthBirth = birthDate.getByFormat("MM");
+    var dayBirth = birthDate.getByFormat("dd");
+
+    // if not is, so continue
+    if (currentMonth != monthBirth || currentDay != dayBirth) {
+        continue;
+    }
+
+    var age = calcAge(currentDate, birthDate);
+
+    var oldAge = gr.getValue("age");
+
+    // if current age is equal loaded age, so continue
+    if (oldAge == age) {
+        continue;
+    }
+
+    // stores information on which user updated
+    gs.info("Date of birth upload changes (USER:." + gr.getValue("name") + ";OldAge:." + oldAge + ";Age:." + age + ")");
+
+    gr.setValue(AGE_FIELD, age);
+    gr.update();
+}
+
+function calcAge(currentDate, birthDate) {
+
+    var age = parseInt(currentDate.getByFormat('yyyy'), 10) - parseInt(birthDate.getByFormat("yyyy"), 10);
+
+    var tMD = currentDate.getByFormat('MMdd');
+    var bMD = birthDate.getByFormat('MMdd');
+
+    if (tMD < bMD) {
+        age--;
+    }
+
+    return age;
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-20 13:09:03</sys_created_on>
+        <sys_id>8f0fd8b4c333321060c85f73e4013166</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Update Age of Employee</sys_name>
+        <sys_package display_value="EDX" source="x_1935344_edx">74f233bbc363361060c85f73e40131d6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EDX">74f233bbc363361060c85f73e40131d6</sys_scope>
+        <sys_update_name>sysauto_script_8f0fd8b4c333321060c85f73e4013166</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:11:01</sys_updated_on>
+        <time_zone>floating</time_zone>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

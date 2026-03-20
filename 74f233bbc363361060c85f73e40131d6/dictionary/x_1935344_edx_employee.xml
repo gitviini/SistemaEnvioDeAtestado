@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e5637f3bc363361060c85f73e401316d" extends="sys_user" label="Employee" max_length="40" name="x_1935344_edx_employee" type="collection">
+        <element label="Supervisor" mandatory="true" max_length="32" name="supervisor" reference="sys_user" type="reference"/>
+        <element label="Age" max_length="40" name="age" read_only="true" type="integer"/>
+        <element label="Date birth" mandatory="true" max_length="40" name="date_birth" type="glide_date"/>
+        <index name="index">
+            <element name="supervisor"/>
+        </index>
+    </element>
+</database>
